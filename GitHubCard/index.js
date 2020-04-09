@@ -1,4 +1,4 @@
-const gitUserData = ["ToEndThePeace", "sadamexx", "shayne-smith", "Istott"];
+const gitUserData = ["ToEndThePeace", "sadamexx", "shayne-smith", "Istott", "ohman4"];
 
 // Simple Utility Functions
 function get(selector) {
