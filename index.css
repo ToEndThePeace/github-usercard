@@ -83,8 +83,16 @@ body {
   height: 150px;
 }
 
-.header p {
+.header div {
   font-size: 48px;
+  text-align: center;
+}
+.header label {
+  font-size: 16px;
+}
+
+.header button {
+  margin-top: 20px;
 }
 
 .cards {
@@ -99,6 +107,7 @@ body {
   box-shadow: 0 1px 6px -2px #000;
   background-color: #FFF;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .card img {
@@ -123,5 +132,16 @@ body {
   margin: 3px 0 10px;
 }
 
+.card.noshow {
+  display: none;
+}
+
+.card .close {
+  font-size: 30px;
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  cursor: pointer;
+}
 
 
