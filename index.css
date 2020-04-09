@@ -144,4 +144,6 @@ body {
   cursor: pointer;
 }
 
-
+em {
+  font-style: italic;
+}

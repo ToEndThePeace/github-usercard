@@ -63,7 +63,7 @@ function makeCard(gitData) {
   link.textContent = gitData.html_url;
   followers.textContent = `Followers: ${gitData.followers}`;
   following.textContent = `Following: ${gitData.following}`;
-  bio.textContent = `Bio: ${gitData.bio}`;
+  bio.innerHTML = `Bio: ${gitData.bio != null ? gitData.bio : "<em>no bio provided</em>"}`;
 
   //Structure the Element
   card.appendChild(close);
