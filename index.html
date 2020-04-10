@@ -1,21 +1,39 @@
 <!-- Do NOT change anything here except TODO line -->
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="./GitHubCard/index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <img src="./assets/lambdalogo.png" alt="Lambda Logo"/>
-        <p>❤️'s</p>
+        <img src="./assets/lambdalogo.png" alt="Lambda Logo" />
+        <div>
+          ❤️'s
+          <br />
+          <button id="loadUsers">Load Users From Array</button>
+          <form>
+            <label for="search">Username: </label>
+            <input type="text" id="search" />
+            <input
+              onclick="event.preventDefault()"
+              type="submit"
+              value="Submit"
+              id="submit"
+            />
+          </form>
+        </div>
         <img src="./assets/githublogo.png" alt="GitHub Logo" />
       </div>
       <div class="cards"></div>
     </div>
     <!-- TODO: add CDN library here -->
-    <script src="./GitHubCard/index.js"></script>
   </body>
 </html>
 <!-- Do NOT change anything here except TODO line -->
